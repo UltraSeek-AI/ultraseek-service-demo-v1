@@ -5,7 +5,6 @@ token.json
 # Bỏ qua thư mục ảo và cache
 venv/
 __pycache__/
-alembic/versions/
 
 # Bỏ qua file cài đặt Python
 *.pyc

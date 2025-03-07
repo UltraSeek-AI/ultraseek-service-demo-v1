@@ -1,4 +1,4 @@
-UltraSeek - Hướng dẫn cài đặt và khởi chạy dự án
+UltraSeek - Hướng dẫn cài đặt và khởi chạy dự án Python 3.12, 3.9
 
 1. Clone Repository
 
@@ -65,7 +65,7 @@ sqlalchemy.url = postgresql://ultraseek:ultraseek@localhost:5432/ultraseek
 
 6. Thực hiện Migration Database
 
-Tạo migration:
+Tạo migration message de update:
 
 alembic revision --autogenerate -m "create data_records table"
 
