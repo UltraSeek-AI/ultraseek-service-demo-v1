@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, Text
 from sqlalchemy.orm import relationship
+from sqlalchemy.dialects.postgresql import JSON
 from app.db.database import Base
 
 
@@ -13,5 +14,6 @@ class Product(Base):
     description = Column(Text, nullable=True)
     price = Column(Float, nullable=False)
     quantity_sold = Column(Integer, default=0)
+    images = Column(JSON, nullable=True, default=[])
 
     category = relationship("Category")
